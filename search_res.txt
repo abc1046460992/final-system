@@ -1,0 +1,1 @@
+3018: make_portal_card(r3, "تقارير الحضور", "إحصائيات الغياب وملف السجلات", "📋", "#e65100", (lambda: self.show("attendance_view")))

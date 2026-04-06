@@ -1,0 +1,12 @@
+3363:         make_portal_card(r2, "إدارة المواد", "تحديث المقررات والمناهج", "📦", "#ff9800", (lambda: self.show("subjects")))
+3364:         make_portal_card(r2, "بيانات الطلاب", "التعديل على ملفات الطلاب", "👨\u200d🎓", "#9c27b0", (lambda: self.show("students")))
+3365:                 r3 = tk.Frame(container, bg=COLOR_BG)
+3366:         r3.pack(fill="x", pady=5)
+3367:         make_portal_card(r3, "إرسال رسالة واتساب", "تواصل مباشر مع ولي الأمر", "💬", "#128c7e", self.send_whatsapp_to_parent)
+3368:         make_portal_card(r3, "تقرير وحضور ومهام", "المهام اليومية والوقتية للموظفين", "📋", "#e65100", (lambda: self.show("attendance_tasks_menu")))
+3369:         make_portal_card(r3, "تسليم النسخة للمدير", "بناء ونسخ النظام الكامل", "🔧", "#263238", self.developer_deploy)
+3370:                 return page
+3371: 
+3372:         # ========================================
+3373: 
+3374:     # --- page_manager_hub_make_portal_card ---

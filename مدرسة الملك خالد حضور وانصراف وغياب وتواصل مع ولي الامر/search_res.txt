@@ -1,0 +1,14 @@
+327: 'manager_hub':self.page_manager_hub(self.container),
+3308: # --- page_manager_hub ---
+3309: def page_manager_hub(self, parent=None):
+3367: make_portal_card(r2, "إدارة المعلمين", "تحديث كادر المعلمين والأسماء", "👨\u200d🏫", "#795548", (lambda: self.show("teachers")))
+3373: make_portal_card(r3, "تصدير أرقام أولياء الأمور", "تصدير الأرقام للواتساب", "📱", "#25d366", self.export_parent_contacts)
+3378: # --- page_manager_hub_make_portal_card ---
+3379: def page_manager_hub_make_portal_card(parent=None, title=None, subtitle=None, icon=None, color=None, cmd=None):
+3416: # --- page_manager_hub_make_portal_card_on_click ---
+3417: def page_manager_hub_make_portal_card_on_click(e=None):
+3423: # --- page_manager_hub_make_portal_card_on_e ---
+3424: def page_manager_hub_make_portal_card_on_e(e=None):
+3430: # --- page_manager_hub_make_portal_card_on_l ---
+3431: def page_manager_hub_make_portal_card_on_l(e=None):
+11756: self.save_formatted_excel(df_export, path, sheet_name="أرقام أولياء الأمور")

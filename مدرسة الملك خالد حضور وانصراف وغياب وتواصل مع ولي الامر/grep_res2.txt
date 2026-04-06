@@ -1,0 +1,2 @@
+def define_data_path(relative_path):
+def data_path(relative_path=None):

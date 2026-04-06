@@ -1,0 +1,33 @@
+2026/03/31-13:41:57.385 3d98 Reusing MANIFEST c:\Users\abc10\Desktop\تجربه\chrome_data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/31-13:41:57.386 3d98 Recovering log #243
+2026/03/31-13:41:57.403 3d98 Reusing old log c:\Users\abc10\Desktop\تجربه\chrome_data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000243.log 
+2026/03/31-13:42:01.254 3d98 Level-0 table #251: started
+2026/03/31-13:42:01.275 3d98 Level-0 table #251: 1065491 bytes OK
+2026/03/31-13:42:01.277 3d98 Delete type=0 #243
+2026/03/31-13:42:01.408 3cf4 Compacting 1@1 + 4@2 files
+2026/03/31-13:42:01.458 3cf4 Generated table #252@1: 82062 keys, 2232814 bytes
+2026/03/31-13:42:01.504 3cf4 Generated table #253@1: 99709 keys, 2253002 bytes
+2026/03/31-13:42:01.553 3cf4 Generated table #254@1: 35975 keys, 2283673 bytes
+2026/03/31-13:42:01.594 3cf4 Generated table #255@1: 44870 keys, 1921595 bytes
+2026/03/31-13:42:01.594 3cf4 Compacted 1@1 + 4@2 files => 8691084 bytes
+2026/03/31-13:42:01.595 3cf4 compacted to: files[ 0 0 4 0 0 0 0 ]
+2026/03/31-13:42:01.595 3cf4 Delete type=2 #245
+2026/03/31-13:42:01.595 3cf4 Delete type=2 #246
+2026/03/31-13:42:01.595 3cf4 Delete type=2 #247
+2026/03/31-13:42:01.595 3cf4 Delete type=2 #248
+2026/03/31-13:42:01.595 3cf4 Delete type=2 #251
+2026/03/31-13:42:08.621 1160 Level-0 table #257: started
+2026/03/31-13:42:08.643 1160 Level-0 table #257: 1067305 bytes OK
+2026/03/31-13:42:08.644 1160 Delete type=0 #250
+2026/03/31-13:42:09.272 3cf4 Compacting 1@1 + 4@2 files
+2026/03/31-13:42:09.325 3cf4 Generated table #258@1: 86077 keys, 2238094 bytes
+2026/03/31-13:42:09.372 3cf4 Generated table #259@1: 100149 keys, 2253285 bytes
+2026/03/31-13:42:09.424 3cf4 Generated table #260@1: 30369 keys, 2273754 bytes
+2026/03/31-13:42:09.467 3cf4 Generated table #261@1: 44873 keys, 1812612 bytes
+2026/03/31-13:42:09.467 3cf4 Compacted 1@1 + 4@2 files => 8577745 bytes
+2026/03/31-13:42:09.468 3cf4 compacted to: files[ 0 0 4 0 0 0 0 ]
+2026/03/31-13:42:09.468 3cf4 Delete type=2 #252
+2026/03/31-13:42:09.468 3cf4 Delete type=2 #253
+2026/03/31-13:42:09.468 3cf4 Delete type=2 #254
+2026/03/31-13:42:09.469 3cf4 Delete type=2 #255
+2026/03/31-13:42:09.469 3cf4 Delete type=2 #257

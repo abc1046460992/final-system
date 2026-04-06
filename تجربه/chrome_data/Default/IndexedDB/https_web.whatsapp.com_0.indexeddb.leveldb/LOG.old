@@ -1,0 +1,33 @@
+2026/03/31-13:30:51.877 3d28 Reusing MANIFEST c:\Users\abc10\Desktop\تجربه\chrome_data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/31-13:30:51.877 3d28 Recovering log #230
+2026/03/31-13:30:51.888 3d28 Reusing old log c:\Users\abc10\Desktop\تجربه\chrome_data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000230.log 
+2026/03/31-13:30:55.855 3d28 Level-0 table #238: started
+2026/03/31-13:30:55.880 3d28 Level-0 table #238: 1099464 bytes OK
+2026/03/31-13:30:55.882 3d28 Delete type=0 #230
+2026/03/31-13:30:55.974 3d28 Compacting 1@1 + 4@2 files
+2026/03/31-13:30:56.026 3d28 Generated table #239@1: 84757 keys, 2235126 bytes
+2026/03/31-13:30:56.076 3d28 Generated table #240@1: 100250 keys, 2253721 bytes
+2026/03/31-13:30:56.123 3d28 Generated table #241@1: 25813 keys, 2268204 bytes
+2026/03/31-13:30:56.161 3d28 Generated table #242@1: 44246 keys, 1695105 bytes
+2026/03/31-13:30:56.161 3d28 Compacted 1@1 + 4@2 files => 8452156 bytes
+2026/03/31-13:30:56.162 3d28 compacted to: files[ 0 0 4 0 0 0 0 ]
+2026/03/31-13:30:56.162 3d28 Delete type=2 #232
+2026/03/31-13:30:56.162 3d28 Delete type=2 #233
+2026/03/31-13:30:56.162 3d28 Delete type=2 #234
+2026/03/31-13:30:56.162 3d28 Delete type=2 #235
+2026/03/31-13:30:56.162 3d28 Delete type=2 #238
+2026/03/31-13:31:06.432 3d28 Level-0 table #244: started
+2026/03/31-13:31:06.458 3d28 Level-0 table #244: 1071056 bytes OK
+2026/03/31-13:31:06.459 3d28 Delete type=0 #237
+2026/03/31-13:31:06.463 3d28 Compacting 1@1 + 4@2 files
+2026/03/31-13:31:06.516 3d28 Generated table #245@1: 83529 keys, 2233719 bytes
+2026/03/31-13:31:06.568 3d28 Generated table #246@1: 99997 keys, 2251844 bytes
+2026/03/31-13:31:06.617 3d28 Generated table #247@1: 29404 keys, 2278656 bytes
+2026/03/31-13:31:06.663 3d28 Generated table #248@1: 44821 keys, 1778296 bytes
+2026/03/31-13:31:06.663 3d28 Compacted 1@1 + 4@2 files => 8542515 bytes
+2026/03/31-13:31:06.663 3d28 compacted to: files[ 0 0 4 0 0 0 0 ]
+2026/03/31-13:31:06.664 3d28 Delete type=2 #239
+2026/03/31-13:31:06.664 3d28 Delete type=2 #240
+2026/03/31-13:31:06.664 3d28 Delete type=2 #241
+2026/03/31-13:31:06.664 3d28 Delete type=2 #242
+2026/03/31-13:31:06.664 3d28 Delete type=2 #244

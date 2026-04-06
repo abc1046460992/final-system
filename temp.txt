@@ -1,0 +1,20 @@
+                # 4. Copy the freshly built .exe
+                dist_exe = os.path.join(os.getcwd(), "dist", f"{exe_name}.exe")
+                final_exe = os.path.join(delivery_dir, f"{exe_name}.exe")
+                if os.path.exists(dist_exe):
+                    shutil.copy2(dist_exe, final_exe)
+                    self.after(0, lambda: update_status("", f">>> تم نسخ التطبيق: {exe_name}.exe"))
+                
+                # 5. Copy Data Files
+                files_to_copy = [f for f in os.listdir(os.getcwd()) if f.endswith(('.xlsx', '.json', '.png', '.docx'))]
+                for f in files_to_copy:
+                    src = os.path.join(os.getcwd(), f)
+                    dst = os.path.join(delivery_dir, f)
+                    if os.path.isfile(src) and src != dst:
+                        shutil.copy2(src, dst)
+                        self.after(0, lambda f=f: update_status("", f">>> تم نسخ: {f}"))
+                
+                self.after(0, lambda: update_status("✅ تمت العملية بنجاح!", ">>> كل شيء جاهز للتسليم"))
+                self.after(2000, lambda: progress_win.destroy())
+                
+                if messagebox.askyesno("نجاح", "تم استخراج النظام وتجهيزه في مجلد 'النسخة_للمدير' بنجاح!\n\nهل تريد فتح المجلد الآن لمراجعته أو إرساله للمدير؟"):

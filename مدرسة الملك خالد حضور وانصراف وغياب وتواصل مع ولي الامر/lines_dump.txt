@@ -1,0 +1,10 @@
+562:         sb_link("🎒 منصة مدرستي", "https://schools.madrasati.sa", bg_color="#009688", hover_color="#00796B")
+563:         sb_link("💼 نظام فارس", "https://faris.moe.gov.sa", bg_color="#F57C00", hover_color="#EF6C00")
+564:         tk.Frame((self.side), bg="#43a047", height=1).pack(fill="x", padx=20, pady=20)
+565:                 self.sb("الموظفين 📋", (lambda: self.show("stages_landing")), bg="#d32f2f", fg="white")
+566:         self.sb("الطلاب 👨\u200d🎓", (self.show_students_section), bg="#388e3c", fg="white")
+567:         self.sb("التقويم الدراسي 📅", (self.show_calendar_sidebar), bg="#0a8f49", fg="white")
+568:         self.sb("بوابة المدير 🏛️", (self.show_manager_hub), bg="#f9a825", fg="#333")
+569:         self.show("home")
+570: 
+571:         # ========================================

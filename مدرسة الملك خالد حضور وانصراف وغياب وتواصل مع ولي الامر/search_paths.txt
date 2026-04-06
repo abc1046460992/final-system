@@ -1,0 +1,34 @@
+48: FILE_MASTER = define_data_path("جدول_المعلمين_الأساسي.xlsx")
+49: FILE_SUBJECTS = define_data_path("المواد.xlsx")
+50: FILE_STUDENTS = define_data_path("بيانات_الطلاب.xlsx")
+51: FILE_TIMINGS = define_data_path("توقيت_الدوام.xlsx")
+52: FILE_CALENDAR = define_data_path("التقويم_الدراسي.xlsx")
+53: FILE_EMPLOYEES_PINS = define_data_path("أرقام_سرية_الموظفين.xlsx")
+54: FILE_SWAPS = define_data_path("قاعدة_بيانات_المبادلات.xlsx")
+55: FILE_TEACHERS = define_data_path("المعلمين.xlsx")
+56: FILE_ATTENDANCE = define_data_path("جدول_الحضور_والتأخير_والانصراف.xlsx")
+1946: filename = f"جدول_المعلم_{teacher_name}.xlsx"
+2884: path = filedialog.asksaveasfilename(defaultextension=".xlsx",
+2885: initialfile=f"إنجاز-{emp_name}-{date_selected}.xlsx",
+2887: filetypes=[("Excel files", "*.xlsx")])
+2935: path = filedialog.askopenfilename(title="اختر ملف", filetypes=[('All Files', '*.*'), ('Images', '*.png;*.jpg;*.jpeg'), ('Docs', '*.docx;*.pdf;*.xlsx')])
+3138: path = filedialog.askopenfilename(title="اختر ملف", filetypes=[('All Files', '*.*'), ('Images', '*.png;*.jpg;*.jpeg'), ('Docs', '*.docx;*.pdf;*.xlsx')])
+3727: ('All Supported', '*.jpg *.jpeg *.png *.pdf *.docx *.xlsx *.doc *.xls'),
+3731: ('Excel Files', '*.xlsx *.xls')])
+4532: ('All Supported', '*.jpg *.jpeg *.png *.pdf *.docx *.xlsx *.doc *.xls'),
+4536: ('Excel Files', '*.xlsx *.xls')])
+9207: path = filedialog.askopenfilename(filetypes=[('Excel Files', '*.xlsx *.xls')])
+9278: path = filedialog.askopenfilename(filetypes=[('Excel Files', '*.xlsx *.xls')])
+9486: fname = f"جدول_الطالب_{student_name}.xlsx"
+9603: path = filedialog.askopenfilename(title="اختر ملف التوقيت", filetypes=[('Excel', '*.xlsx *.xls')])
+9746: path = filedialog.askopenfilename(title="اختر ملف التوقيت", filetypes=[('Excel', '*.xlsx *.xls')])
+10215: filename = f'جدول_الطالب_{clean_name}_{datetime.now().strftime("%Y%m%d_%H%M")}.xlsx'
+10387: path = os.path.join(EXPORT_DIR, f"لوحة_المدير_الرسمية_{now}.xlsx")
+10437: path = os.path.join(EXPORT_DIR, f"لوحة_المدير_الرسمية_{now}.xlsx")
+10599: name = f"الجدول_التفصيلي_{now}.xlsx"
+11311: name = f"{self.current_teacher}_جدول_{now}.xlsx"
+11637: files_to_copy = [f for f in os.listdir(os.getcwd()) if f.endswith(('.xlsx', '.json', '.png', '.docx')) and not any(x in f for x in EXCLUDE)]
+11697: name = f"{self.current_teacher}_جدول_{now}.xlsx"
+11760: filename = f"أرقام_أولياء_الأمور_{now}.xlsx"
+14647: fpath = data_path("سجل_السلوك_والمشاركة.xlsx(")
+15035: file_path = data_path("سجل_متابعة_الحصص.xlsx")
