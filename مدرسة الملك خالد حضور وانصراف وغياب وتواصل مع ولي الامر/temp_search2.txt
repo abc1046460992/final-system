@@ -1,0 +1,14 @@
+896:                     messagebox.showinfo("تم التسليم", f"{msg}\nتم الحفظ في:\n{path}\n\nيمكنك الآن نقل الملف إلى جهاز المدير.")
+901:         tk.Button(action_bar, text="تسليم العمل للمدير 📤", command=do_sync_export, bg="#f57f17",
+1104:                 messagebox.showinfo("تم التسليم", f"{msg}\nتم الحفظ في:\n{path}\n\nيمكنك الآن نقل الملف إلى جهاز المدير.")
+1611:                     log_event(name_text, "الواجب", "تسليم", "تم" if ok else "لم يحل", 1 if ok else -1)
+1702:         log_event(name_text, "الواجب", "تسليم", "تم" if ok else "لم يحل", 1 if ok else -1)
+1802:                 log_event(name_text, "الواجبات", "تسليم", val, pts)
+1908:         log_event(name_text, "الواجبات", "تسليم", val, pts)
+3381:         make_portal_card(r3, "تسليم النسخة للمدير", "بناء ونسخ النظام الكامل", "🔧", "#263238", self.developer_deploy)
+11544:         if pw != "2210":
+11549:         confirm = messagebox.askyesno("تأكيد", "هل أنت متأكد من رغبتك في إعادة بناء النسخة وتسليمها للمدير الآن؟\n(قد تستغرق العملية دقيقتين)\n\nسيتم نسخ جميع البيانات الحالية مع النسخة الجديدة.")
+11553:         progress_win.title("جاري البناء والتسليم...")
+11557:         tk.Label(progress_win, text="⚙️ جاري بناء وتسليم النظام", font=('Segoe UI', 16, 'bold'), bg="#263238",
+11627:                 self.after(0, lambda: update_status("جاري تجهيز مجلد التسليم للمدير...", ">>> نسخ الملفات المهمة"))
+11662:                 self.after(0, lambda: update_status("✅ تمت العملية بنجاح!", ">>> كل شيء جاهز للتسليم"))

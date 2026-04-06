@@ -11540,6 +11540,62 @@ class App(tk.Tk):
     # --- developer_deploy ---
     def developer_deploy(self):
         # ========================================
+        dialog = tk.Toplevel(self)
+        dialog.title("إدارة النظام")
+        dialog.geometry("450x250")
+        dialog.configure(bg="#263238")
+        dialog.transient(self)
+        dialog.grab_set()
+        
+        tk.Label(dialog, text="الرجاء اختيار العملية المطلوبة:", font=('Segoe UI', 14, 'bold'), bg="#263238", fg="white").pack(pady=(20, 10))
+        
+        def on_deploy():
+            dialog.destroy()
+            self._run_developer_deploy()
+            
+        def on_backup():
+            dialog.destroy()
+            self._run_github_backup()
+            
+        tk.Button(dialog, text="تسليم النسخة للمدير 📦", font=('Segoe UI', 12, 'bold'), bg="#ffca28", fg="#263238", width=30, pady=5, command=on_deploy).pack(pady=10)
+        tk.Button(dialog, text="عمل نسخة احتياطية (GitHub) ☁️", font=('Segoe UI', 12, 'bold'), bg="#4caf50", fg="white", width=30, pady=5, command=on_backup).pack(pady=10)
+
+    # --- _run_github_backup ---
+    def _run_github_backup(self):
+        # ========================================
+        progress_win = tk.Toplevel(self)
+        progress_win.title("جاري النسخ الاحتياطي...")
+        progress_win.geometry("400x150")
+        progress_win.configure(bg="#263238")
+        tk.Label(progress_win, text="☁️ جاري رفع البيانات إلى GitHub...", font=('Segoe UI', 14, 'bold'), bg="#263238", fg="#ffca28").pack(pady=40)
+        progress_win.update()
+        
+        try:
+            import subprocess
+            import os
+            import datetime
+            
+            repo_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            CREATE_NO_WINDOW = 0x08000000
+            
+            subprocess.run(["git", "add", "."], check=True, cwd=repo_path, creationflags=CREATE_NO_WINDOW)
+            
+            commit_msg = f"Auto backup {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            subprocess.run(["git", "commit", "-m", commit_msg], cwd=repo_path, creationflags=CREATE_NO_WINDOW)
+            
+            subprocess.run(["git", "push", "origin", "main"], check=True, cwd=repo_path, creationflags=CREATE_NO_WINDOW)
+            
+            progress_win.destroy()
+            messagebox.showinfo("نجاح", "تم عمل النسخة الاحتياطية بنجاح على مساحة GitHub الخاصة بك!")
+            
+        except Exception as e:
+            if progress_win.winfo_exists():
+                progress_win.destroy()
+            messagebox.showerror("خطأ", f"حدث خطأ أثناء النسخ الاحتياطي:\n{str(e)}")
+
+    # --- _run_developer_deploy ---
+    def _run_developer_deploy(self):
+        # ========================================
         pw = simpledialog.askstring("أدخل الرمز السري", "الوصول محمي. أدخل الرمز السري:", show="*")
         if pw != "2210":
             if pw is not None:
